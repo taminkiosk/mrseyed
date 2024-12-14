@@ -1,0 +1,184 @@
+#vazirblack {
+font-family: vazirbk;
+}
+#vazirbold {
+font-family: vazirbd;
+}
+#sahelblack {
+font-family: SahelBlack;
+}
+#sahelbold {
+font-family: SahelBold;
+}
+#irsblack {
+font-family: irsblack;
+}
+#irsbold {
+font-family: irsbold;
+}
+#irs {
+font-family: irsmedium;
+}
+#vazir {
+font-family: vazirm;
+}
+#sahel {
+font-family: Sahel;
+}
+.punk {
+background-color:purple;
+}
+
+.form {
+width:390px;
+border:6px double red;
+border-radius:15pt;
+text-align:justify;
+font-family: irsbold;
+font-size: 16px;
+
+}
+.form-div {
+margin:5px;
+color: darkblue;
+font-size:16px;
+}
+.form2 {
+width:390px;
+border:2px solid darkblue;
+border-radius:5px;
+font-family: vazirbd;
+font-size:14px;
+
+}
+.form22 {
+width:390px;
+border:2px solid darkblue;
+border-radius:5px;
+font-family: vazirbd;
+font-size:14px;
+height:50px;
+}
+
+.form2 > table {
+text-align:center;
+}
+	#f2tr {
+	border: 1px solid gold;
+	color:yellow;
+	font-family: SahelBlack;
+	font-size: 18px;
+	}
+	#f2tr2 {
+	color:lime;
+	font-family: SahelBlack;
+    margin-right:120px;
+    font-size:30px;
+    margin-top:-10px;
+    margin-bottom:20px;
+	}
+	.img-f2tr2 {
+	position:absolute;
+	width:80px;
+	margin-top:-65px;
+	margin-right:20px;
+	margin-bottom:20px;
+	}
+	#f2th {
+	border:1px solid black;
+	font-family: SahelBlack;
+	text-align:center;
+	font-size:18px;
+	}
+	#f2td {
+	border: 1px solid black;
+	font-family: vazirbd;
+	text-align:center;
+	font-size:20px;
+	}
+	#f2tr1 {
+	color: darkblue;
+	font-family:irsbold;
+	}
+.sub-acc {
+text-align:right;
+margin:10px;
+font-size:18px;
+color: yellow;
+}
+.acc-info {
+flex: 0 0 auto;
+width: 95%;
+border:1px solid red;
+border-radius: 5px;
+background-color:lightyellow;
+}
+.t-mosht {
+background-color:lightgreen;
+color:brown;
+font-family:irsblack;
+border:1px solid black;
+text-align:center;
+font-size:20px;
+}
+.t-hesab {
+background-color:lightyellow;
+color:darkblue;
+font-family:irsblack;
+text-align:center;
+border:1px solid black;
+font-size:20px;
+}
+.t-sheba {
+background-color:lightblue;
+color:darkgreen;
+font-family:irsblack;
+text-align:center;
+border:1px solid black;
+font-size:15px;
+}
+.t-card {
+background-color:lightgreen;
+color:darkblue;
+font-family:irsblack;
+border:1px solid black;
+text-align:center;
+font-size:22px;
+}
+.t-bank {
+background-color:white;
+color:brown;
+font-family:irsblack;
+border:1px solid black;
+text-align:center;
+font-size:20px;
+}
+.card-head {
+font-family: SahelBlack;
+color:lightyellow;
+font-size:25px;
+text-align:center;
+}
+.btnn {
+font-family: irsblack;
+font-size: 20px;
+width: 120px;
+}
+.btn {
+border:1px solid red;
+}
+#btn-menu {
+width:350px;
+margin: 5px;
+font-family: irsbold;
+font-size: 22px;
+}
+//⛔⛔⛔⛔⛔⛔⛔⛔⛔//
+
+.copied {
+    color: red;
+}
+
+.copied:after {
+    content: attr(title);
+}
