@@ -63,92 +63,19 @@
     </tr>
    </table>
    <div class="acc-info" >
-    <table>
-    <tr>
-     <th id="f2th" class="bg-success" width="100px" >شماره مشتری</th>
-     <th class="t-mosht"  width="210px" id="mosht" >***</th>
-     <th>
-      <button class="btn btn-dark" onclick="copyFunc('#mosht')"><i class="icofont icofont-copy"></i></button>
-     </th>
-    </tr>
-     <tr>
-      <th id="f2th" class="bg-warning" width="100px" >شماره حساب</th>
-      <th class="t-hesab"  width="210px" id="hesab" >0310519555008</th>
-      <th>
-      <button class="btn btn-dark" onclick="copyFunc('#hesab')"><i class="icofont icofont-copy"></i></button>
-      </th>
-     </tr>
-     <tr>
-      <th id="f2th" class="bg-info" width="100px" >شماره شبا</th>
-      <th class="t-sheba"  width="210px" id="sheba" >IR480190000000310519555008</th>
-      <th>
-      <button class="btn btn-dark" onclick="copyFunc('#sheba')"><i class="icofont icofont-copy"></i></button>
-      </th>
-     </tr>
-     <tr>
-      <th id="f2th" class="bg-secondary" width="100px" >شعبه</th>
-      <th class="t-bank"  width="210px" colspan=2"" >سـرباز کـرمان</th>
-      <th>
-
-      </th>
-     </tr>
-    </table>
-    <table>
-     <tr class="bg-dark" >
-     <td style="text-align:left"><i style="font-size:40px;color:gold;" align="left"   class="icofont icofont-card"></i></td>
-      <th colspan="2" class="card-head"  >اطلاعات کارت</th>
-      <td colspan="2" ><i style="font-size:40px;color:gold"  class="icofont icofont-card"></i></td>
-     </tr>
-     <tr>
-      <th class="bg-success" id="f2th" >شماره کارت</th>
-      <td colspan="3" class="t-card" id="CardNum" >6037697554727781</td>
-      <td width="45px" >
-       <button class="btn btn-dark" onclick="copyFunc('#CardNum')"><i class="icofont icofont-copy"></i></button>
-      </td>
-     </tr>
-     <tr>
-      <th width="100px" id="f2th"  class="bg-warning" >تاریخ‌انقضا</th>
-      <td width="100px" class="t-bank" >1403/11</td>
-      <th width="80px" class="t-bank" >4170</th>
-      <td width="80px"  class="bg-danger" id="f2th" colspan="2" >CVV2</td>
-     </tr>
-    </table>
-    <img src="7781.jpg" width="360px"  style="border:2px solid black" >
-    <textarea hidden="hidden" id="all" >
-    *بانک ملی ایران*
-نوع حساب: پس انداز
-صاحب حساب: سیدمحمد موسوی
-شماره حساب: 0320560877000
-شماره شبا:
-IR530170000000320560877000
-شماره کارت:
-6037-9981-1348-0288
-</textarea>
-
-      <button style="font-size:20px;margin:10px; width: 350px; font-family: SahelBlack"  class="btn btn-primary" onclick="copyFunc('#all')">کپی کردن تمام اطلاعات
-
-      </button>
+    <div class="theme-tamin" >
+     <button class="gold" id="btn-menu" >حساب پس‌انداز اصلی</button>
+     <button class="blue" id="btn-menu" >حساب پس‌انداز دوم</button>
+     <button class="normal" id="btn-menu" >حساب سپرده</button>
+     <button class="orange" id="btn-menu" >حساب پس‌انداز دوم</button>
+     <button class="button red" id="btn-menu" >حساب پس‌انداز دوم</button>
+     <button class="tamin-button-danger" id="btn-menu" >حساب پس‌انداز دوم</button>
+    </div>
    </div>
   </div>
  
  </center>
- <script type="text/javascript">
- console.clear()
  
- function copyFunc(elemId) {
- 
- let that = document.querySelector(elemId);
- 
- navigator.clipboard.writeText(that?.innerText).then(res => {
- alert("اطلاعات زیر با موفقیت کپی شد. \n" + that.innerText );
- 
- that.classList.add("copied")
- setTimeout(()=> that.classList.remove("copied"), 2000)
- 
- });
- }
- 
- </script>
 </body>
 <script src="data.js" ></script>
 <script src="./../../js/jquery.slim.min.js" ></script>
