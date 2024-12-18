@@ -33,6 +33,16 @@
 <script src="js/5/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/tarikh.js"></script>
 </head>
+<script type="text/javascript">
+
+function create()
+{
+    var data=document.getElementById("data").value;
+    //document.getElementById("qrimage").innerHTML="<img src='https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl="+encodeURIComponent(data)+"'/>";
+    document.getElementById("qrimage").innerHTML="<img src='https://api.qrserver.com/v1/create-qr-code/?data="+encodeURIComponent(data)+"'/>";
+}
+
+</script>
 <body>
  <center>
 
@@ -95,7 +105,113 @@
    </div>
     
   </form>
-  
+  <div id="main">
+<div id="header">
+<p id="mp1">
+QR Code scanner
+</p>
+<ul>
+<li><a href="index.html">Scan</a></li>
+<li><a href="create.html">Create</a></li>
+<li><a href="about.html">About</a></li>
+<li style="border: medium none;"><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div id="mainbody">
+<p style="font-size:25px;text-align:center;">Create QR Code</p>
+<table border="0" align="center">
+<tr><td>
+<p style="font-size:20px;text-align:center;">Enter URL or text:</p>
+<textarea cols="40" rows="3" id="data"></textarea>
+</td></tr>
+<tr><td align="center">
+<div class="button" onclick="create()">Create</div>
+</td></tr>
+<tr><td align="center">
+<div id="qrimage">
+</div>
+</td></tr>
+
+</table>
+</div>
+<div id="footer">
+<br>
+<h5 align="center">Copyright &copy; 2011 <a target="_blank" href="http://www.lazarsoft.info">Lazar Laszlo</a></h5>
+</div>
+</div>
+
+<!--******
+<script type="text/javascript" src="llqrcode.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="webqr.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWM3JQZB95"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWM3JQZB95');
+</script>
+
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+<div style="position:relative;top:+20px;left:0px;"><g:plusone size="medium"></g:plusone></div>
+<p id="mp1">
+QR Code scanner
+</p>
+<ul>
+<li><a href="index.html">Scan</a></li>
+<li><a href="create.html">Create</a></li>
+<li><a href="about.html">About</a></li>
+<li style="border: medium none;"><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div id="mainbody">
+<table class="tsel" border="0" width="100%">
+<tr>
+<td valign="top" align="center" width="50%">
+<table class="tsel" border="0">
+<tr>
+<td><img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" /></td>
+<td><img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right"/></td></tr>
+<tr><td colspan="2" align="center">
+<div id="outdiv">
+</div></td></tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="3" align="center">
+<img src="down.png"/>
+</td></tr>
+<tr><td colspan="3" align="center">
+<div id="result"></div>
+</td></tr>
+</table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8418802408648518"
+     data-ad-slot="2527990541"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>&nbsp;
+<div id="footer">
+<img style="position:relative;top:0px;left:0px;margin:0;padding:0;" src="comodo_secure_seal_100x85_transp.png"/>
+<h5 align="center">Copyright &copy; 2011 <a target="_blank" href="http://www.lazarsoft.info">Lazar Laszlo</a></h5>
+</div>
+</div>
+<canvas id="qr-canvas" width="800" height="600"></canvas>
+<script type="text/javascript">load();</script>
+--------------------->
+
  </center>
 </body>
 
